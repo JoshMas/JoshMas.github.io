@@ -67,6 +67,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../d6/dea/class_framed_wok_1_1_inventory_1_1_item_stack-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -85,12 +86,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afd364906d7124aa27fa727462e265f54"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d85/class_framed_wok_1_1_inventory_1_1_item_stack.html#afd364906d7124aa27fa727462e265f54">CompareTo</a> (<a class="el" href="../../dd/d85/class_framed_wok_1_1_inventory_1_1_item_stack.html">ItemStack</a> other)</td></tr>
 <tr class="memdesc:afd364906d7124aa27fa727462e265f54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the two items using their names  <a href="../../dd/d85/class_framed_wok_1_1_inventory_1_1_item_stack.html#afd364906d7124aa27fa727462e265f54">More...</a><br /></td></tr>
 <tr class="separator:afd364906d7124aa27fa727462e265f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec6170e42be323895d532a3d4612c2be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d85/class_framed_wok_1_1_inventory_1_1_item_stack.html#aec6170e42be323895d532a3d4612c2be">IsStackFull</a> ()</td></tr>
+<tr class="memdesc:aec6170e42be323895d532a3d4612c2be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the item stack is full  <a href="../../dd/d85/class_framed_wok_1_1_inventory_1_1_item_stack.html#aec6170e42be323895d532a3d4612c2be">More...</a><br /></td></tr>
+<tr class="separator:aec6170e42be323895d532a3d4612c2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ab2c60a7c814a5951ee345ee16304b109"><td class="memItemLeft" align="right" valign="top"><a id="ab2c60a7c814a5951ee345ee16304b109"></a>
+Button&#160;</td><td class="memItemRight" valign="bottom"><b>inventorySlot</b></td></tr>
+<tr class="separator:ab2c60a7c814a5951ee345ee16304b109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ada7160faf91a740e3cb74cf81013e205"><td class="memItemLeft" align="right" valign="top"><a id="ada7160faf91a740e3cb74cf81013e205"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>inUse</b> = false</td></tr>
-<tr class="separator:ada7160faf91a740e3cb74cf81013e205"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27d3653305f46a2efe4b452d9238d396"><td class="memItemLeft" align="right" valign="top"><a id="a27d3653305f46a2efe4b452d9238d396"></a>
 <a class="el" href="../../de/dae/class_framed_wok_1_1_inventory_1_1_item.html">Item</a>&#160;</td><td class="memItemRight" valign="bottom"><b>item</b></td></tr>
 <tr class="separator:a27d3653305f46a2efe4b452d9238d396"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,7 +107,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>itemCount</b></td></tr
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d0/d0a/_item_stack_8cs_source.html#l00007">7</a> of file <a class="el" href="../../d0/d0a/_item_stack_8cs_source.html">ItemStack.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d0a/_item_stack_8cs_source.html#l00008">8</a> of file <a class="el" href="../../d0/d0a/_item_stack_8cs_source.html">ItemStack.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="afd364906d7124aa27fa727462e265f54"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd364906d7124aa27fa727462e265f54">&#9670;&nbsp;</a></span>CompareTo()</h2>
@@ -129,7 +136,36 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>itemCount</b></td></tr
 <p>Compares the two items using their names </p>
 <dl class="section return"><dt>Returns</dt><dd>-1 if the first number is smaller, 1 if it is larger, and 0 if they are equal</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d0a/_item_stack_8cs_source.html#l00016">16</a> of file <a class="el" href="../../d0/d0a/_item_stack_8cs_source.html">ItemStack.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d0a/_item_stack_8cs_source.html#l00019">19</a> of file <a class="el" href="../../d0/d0a/_item_stack_8cs_source.html">ItemStack.cs</a>.</p>
+
+</div>
+</div>
+<a id="aec6170e42be323895d532a3d4612c2be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec6170e42be323895d532a3d4612c2be">&#9670;&nbsp;</a></span>IsStackFull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FramedWok.Inventory.ItemStack.IsStackFull </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the item stack is full </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d0a/_item_stack_8cs_source.html#l00035">35</a> of file <a class="el" href="../../d0/d0a/_item_stack_8cs_source.html">ItemStack.cs</a>.</p>
 
 </div>
 </div>

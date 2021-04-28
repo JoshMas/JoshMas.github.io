@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['maximumstack_25',['maximumStack',['../de/dae/class_framed_wok_1_1_inventory_1_1_item.html#a493e6529586071ca4c3c75c2ff492b1f',1,'FramedWok::Inventory::Item']]]
+  ['itemname_53',['itemName',['../de/dae/class_framed_wok_1_1_inventory_1_1_item.html#a2fc0a907baf77b2e34b467cb959674f1',1,'FramedWok::Inventory::Item']]]
 ];

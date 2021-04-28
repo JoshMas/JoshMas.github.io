@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['heapsort_13',['HeapSort',['../d0/d84/class_heap_sort.html',1,'']]]
+  ['binarysearch_28',['BinarySearch',['../d4/deb/class_framed_wok_1_1_searching_1_1_binary_search.html',1,'FramedWok::Searching']]]
 ];

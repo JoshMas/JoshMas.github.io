@@ -73,6 +73,9 @@ $(function() {
 <div class="title">FramedWok.Inventory.Inventory Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Use this component to create a basic inventory screen You must attach it to a Canvas  
+ <a href="../../db/dea/class_framed_wok_1_1_inventory_1_1_inventory.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for FramedWok.Inventory.Inventory:</div>
 <div class="dyncontent">
@@ -85,6 +88,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a046db67be4309a5739e877b34cd05da2"><td class="memItemLeft" align="right" valign="top"><a id="a046db67be4309a5739e877b34cd05da2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
 <tr class="separator:a046db67be4309a5739e877b34cd05da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaddef423aa1aa9b7a5ac1c05197538bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dea/class_framed_wok_1_1_inventory_1_1_inventory.html#aaddef423aa1aa9b7a5ac1c05197538bd">SetupInventoryScreen</a> ()</td></tr>
+<tr class="memdesc:aaddef423aa1aa9b7a5ac1c05197538bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this function to set up the inventory with the correct width and height  <a href="../../db/dea/class_framed_wok_1_1_inventory_1_1_inventory.html#aaddef423aa1aa9b7a5ac1c05197538bd">More...</a><br /></td></tr>
+<tr class="separator:aaddef423aa1aa9b7a5ac1c05197538bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a750ccc872d18340b78d9a0f6590c4a2d"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="../../dd/d85/class_framed_wok_1_1_inventory_1_1_item_stack.html">ItemStack</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dea/class_framed_wok_1_1_inventory_1_1_inventory.html#a750ccc872d18340b78d9a0f6590c4a2d">FlattenInventory</a> (List&lt; List&lt; <a class="el" href="../../dd/d85/class_framed_wok_1_1_inventory_1_1_item_stack.html">ItemStack</a> &gt;&gt; itemStacks)</td></tr>
 <tr class="memdesc:a750ccc872d18340b78d9a0f6590c4a2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the inventory into a one-dimensional list to be sorted  <a href="../../db/dea/class_framed_wok_1_1_inventory_1_1_inventory.html#a750ccc872d18340b78d9a0f6590c4a2d">More...</a><br /></td></tr>
 <tr class="separator:a750ccc872d18340b78d9a0f6590c4a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -97,22 +103,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ac74cbf74066a717470ba8b36b2e449b9"><td class="memItemLeft" align="right" valign="top"><a id="ac74cbf74066a717470ba8b36b2e449b9"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>width</b></td></tr>
+<tr class="memitem:ac74cbf74066a717470ba8b36b2e449b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dea/class_framed_wok_1_1_inventory_1_1_inventory.html#ac74cbf74066a717470ba8b36b2e449b9">width</a></td></tr>
+<tr class="memdesc:ac74cbf74066a717470ba8b36b2e449b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many items wide the inventory is  <a href="../../db/dea/class_framed_wok_1_1_inventory_1_1_inventory.html#ac74cbf74066a717470ba8b36b2e449b9">More...</a><br /></td></tr>
 <tr class="separator:ac74cbf74066a717470ba8b36b2e449b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfce32c4b3a145237e34a9edcf6c7f21"><td class="memItemLeft" align="right" valign="top"><a id="abfce32c4b3a145237e34a9edcf6c7f21"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
+<tr class="memitem:abfce32c4b3a145237e34a9edcf6c7f21"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dea/class_framed_wok_1_1_inventory_1_1_inventory.html#abfce32c4b3a145237e34a9edcf6c7f21">height</a></td></tr>
+<tr class="memdesc:abfce32c4b3a145237e34a9edcf6c7f21"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many items tall the inventory is  <a href="../../db/dea/class_framed_wok_1_1_inventory_1_1_inventory.html#abfce32c4b3a145237e34a9edcf6c7f21">More...</a><br /></td></tr>
 <tr class="separator:abfce32c4b3a145237e34a9edcf6c7f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade74b9b7fb5d79d116d6293de27d2716"><td class="memItemLeft" align="right" valign="top"><a id="ade74b9b7fb5d79d116d6293de27d2716"></a>
 List&lt; List&lt; <a class="el" href="../../dd/d85/class_framed_wok_1_1_inventory_1_1_item_stack.html">ItemStack</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>inventory</b></td></tr>
 <tr class="separator:ade74b9b7fb5d79d116d6293de27d2716"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7542d4b2a6ce0d315770be3e0649b7c0"><td class="memItemLeft" align="right" valign="top"><a id="a7542d4b2a6ce0d315770be3e0649b7c0"></a>
-<a class="el" href="../../d0/d84/class_heap_sort.html">HeapSort</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sortingAlgorithm</b></td></tr>
-<tr class="separator:a7542d4b2a6ce0d315770be3e0649b7c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a157aaa4245155f1b38ca7c9153e1cdf0"><td class="memItemLeft" align="right" valign="top"><a id="a157aaa4245155f1b38ca7c9153e1cdf0"></a>
+Canvas&#160;</td><td class="memItemRight" valign="bottom"><b>inventoryScreen</b></td></tr>
+<tr class="separator:a157aaa4245155f1b38ca7c9153e1cdf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3089e53716f10024ceda4e3d4e02978"><td class="memItemLeft" align="right" valign="top"><a id="ae3089e53716f10024ceda4e3d4e02978"></a>
+Button&#160;</td><td class="memItemRight" valign="bottom"><b>inventorySlot</b></td></tr>
+<tr class="separator:ae3089e53716f10024ceda4e3d4e02978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9a2bdcbcb4d8acc4f48e6af893533d0"><td class="memItemLeft" align="right" valign="top"><a id="ac9a2bdcbcb4d8acc4f48e6af893533d0"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>buttonSize</b> = 50.0f</td></tr>
+<tr class="separator:ac9a2bdcbcb4d8acc4f48e6af893533d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdd3651c9a146c2f297238c9129fecb7"><td class="memItemLeft" align="right" valign="top"><a id="abdd3651c9a146c2f297238c9129fecb7"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>spacing</b> = 10.0f</td></tr>
+<tr class="separator:abdd3651c9a146c2f297238c9129fecb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../dc/d69/_inventory_8cs_source.html#l00007">7</a> of file <a class="el" href="../../dc/d69/_inventory_8cs_source.html">Inventory.cs</a>.</p>
+<div class="textblock"><p>Use this component to create a basic inventory screen You must attach it to a Canvas </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d69/_inventory_8cs_source.html#l00015">15</a> of file <a class="el" href="../../dc/d69/_inventory_8cs_source.html">Inventory.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a750ccc872d18340b78d9a0f6590c4a2d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a750ccc872d18340b78d9a0f6590c4a2d">&#9670;&nbsp;</a></span>FlattenInventory()</h2>
@@ -140,7 +156,7 @@ List&lt; List&lt; <a class="el" href="../../dd/d85/class_framed_wok_1_1_inventor
 
 <p>Puts the inventory into a one-dimensional list to be sorted </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d69/_inventory_8cs_source.html#l00027">27</a> of file <a class="el" href="../../dc/d69/_inventory_8cs_source.html">Inventory.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d69/_inventory_8cs_source.html#l00080">80</a> of file <a class="el" href="../../dc/d69/_inventory_8cs_source.html">Inventory.cs</a>.</p>
 
 </div>
 </div>
@@ -176,7 +192,36 @@ List&lt; List&lt; <a class="el" href="../../dd/d85/class_framed_wok_1_1_inventor
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d69/_inventory_8cs_source.html#l00050">50</a> of file <a class="el" href="../../dc/d69/_inventory_8cs_source.html">Inventory.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d69/_inventory_8cs_source.html#l00103">103</a> of file <a class="el" href="../../dc/d69/_inventory_8cs_source.html">Inventory.cs</a>.</p>
+
+</div>
+</div>
+<a id="aaddef423aa1aa9b7a5ac1c05197538bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaddef423aa1aa9b7a5ac1c05197538bd">&#9670;&nbsp;</a></span>SetupInventoryScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FramedWok.Inventory.Inventory.SetupInventoryScreen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Call this function to set up the inventory with the correct width and height </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d69/_inventory_8cs_source.html#l00049">49</a> of file <a class="el" href="../../dc/d69/_inventory_8cs_source.html">Inventory.cs</a>.</p>
 
 </div>
 </div>
@@ -212,7 +257,60 @@ List&lt; List&lt; <a class="el" href="../../dd/d85/class_framed_wok_1_1_inventor
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d69/_inventory_8cs_source.html#l00041">41</a> of file <a class="el" href="../../dc/d69/_inventory_8cs_source.html">Inventory.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d69/_inventory_8cs_source.html#l00094">94</a> of file <a class="el" href="../../dc/d69/_inventory_8cs_source.html">Inventory.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="abfce32c4b3a145237e34a9edcf6c7f21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfce32c4b3a145237e34a9edcf6c7f21">&#9670;&nbsp;</a></span>height</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FramedWok.Inventory.Inventory.height</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How many items tall the inventory is </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d69/_inventory_8cs_source.html#l00024">24</a> of file <a class="el" href="../../dc/d69/_inventory_8cs_source.html">Inventory.cs</a>.</p>
+
+</div>
+</div>
+<a id="ac74cbf74066a717470ba8b36b2e449b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac74cbf74066a717470ba8b36b2e449b9">&#9670;&nbsp;</a></span>width</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FramedWok.Inventory.Inventory.width</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How many items wide the inventory is </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d69/_inventory_8cs_source.html#l00020">20</a> of file <a class="el" href="../../dc/d69/_inventory_8cs_source.html">Inventory.cs</a>.</p>
 
 </div>
 </div>
