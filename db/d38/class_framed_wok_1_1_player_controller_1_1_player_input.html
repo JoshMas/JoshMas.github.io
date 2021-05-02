@@ -86,11 +86,11 @@ Inheritance diagram for FramedWok.PlayerController.PlayerInput:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6ae45f0f8be3628ebb2625b449023822"><td class="memItemLeft" align="right" valign="top"><a id="a6ae45f0f8be3628ebb2625b449023822"></a>
-Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>GetGroundMovementVector</b> ()</td></tr>
-<tr class="separator:a6ae45f0f8be3628ebb2625b449023822"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a451e5bcc3805927dfb246679964bbc0c"><td class="memItemLeft" align="right" valign="top"><a id="a451e5bcc3805927dfb246679964bbc0c"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>GetCameraRotation</b> ()</td></tr>
+<tr class="memitem:a98e7d8e87fbc58bc988f4a6ec909e92d"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d38/class_framed_wok_1_1_player_controller_1_1_player_input.html#a98e7d8e87fbc58bc988f4a6ec909e92d">GetGroundMovementVector</a> ()</td></tr>
+<tr class="memdesc:a98e7d8e87fbc58bc988f4a6ec909e92d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a movement vector on the XZ plane  <a href="../../db/d38/class_framed_wok_1_1_player_controller_1_1_player_input.html#a98e7d8e87fbc58bc988f4a6ec909e92d">More...</a><br /></td></tr>
+<tr class="separator:a98e7d8e87fbc58bc988f4a6ec909e92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a451e5bcc3805927dfb246679964bbc0c"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d38/class_framed_wok_1_1_player_controller_1_1_player_input.html#a451e5bcc3805927dfb246679964bbc0c">GetCameraRotation</a> ()</td></tr>
+<tr class="memdesc:a451e5bcc3805927dfb246679964bbc0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the new rotation of the camera  <a href="../../db/d38/class_framed_wok_1_1_player_controller_1_1_player_input.html#a451e5bcc3805927dfb246679964bbc0c">More...</a><br /></td></tr>
 <tr class="separator:a451e5bcc3805927dfb246679964bbc0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -104,15 +104,101 @@ KeyCode&#160;</td><td class="memItemRight" valign="bottom"><b>dashKey</b> = KeyC
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ac1d1a9b6cd3ea0c479e44ba09f90df2d"><td class="memItemLeft" align="right" valign="top"><a id="ac1d1a9b6cd3ea0c479e44ba09f90df2d"></a>
-Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>mouseSensitivity</b> = new Vector2(5.0f, 2.0f)</td></tr>
+<tr class="memitem:ac1d1a9b6cd3ea0c479e44ba09f90df2d"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d38/class_framed_wok_1_1_player_controller_1_1_player_input.html#ac1d1a9b6cd3ea0c479e44ba09f90df2d">mouseSensitivity</a> = new Vector2(5.0f, 2.0f)</td></tr>
+<tr class="memdesc:ac1d1a9b6cd3ea0c479e44ba09f90df2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">How much the mouse movement affects the rotation of the camera  <a href="../../db/d38/class_framed_wok_1_1_player_controller_1_1_player_input.html#ac1d1a9b6cd3ea0c479e44ba09f90df2d">More...</a><br /></td></tr>
 <tr class="separator:ac1d1a9b6cd3ea0c479e44ba09f90df2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class that handles input for the first person platforming controller Uses the horizontal and vertical input axes for ground movement Default jump and dash buttons are Space and LeftShift respectively </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/d17/_player_input_8cs_source.html#l00012">12</a> of file <a class="el" href="../../d5/d17/_player_input_8cs_source.html">PlayerInput.cs</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a451e5bcc3805927dfb246679964bbc0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a451e5bcc3805927dfb246679964bbc0c">&#9670;&nbsp;</a></span>GetCameraRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 FramedWok.PlayerController.PlayerInput.GetCameraRotation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the new rotation of the camera </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d17/_player_input_8cs_source.html#l00032">32</a> of file <a class="el" href="../../d5/d17/_player_input_8cs_source.html">PlayerInput.cs</a>.</p>
+
+</div>
+</div>
+<a id="a98e7d8e87fbc58bc988f4a6ec909e92d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98e7d8e87fbc58bc988f4a6ec909e92d">&#9670;&nbsp;</a></span>GetGroundMovementVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 FramedWok.PlayerController.PlayerInput.GetGroundMovementVector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a movement vector on the XZ plane </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d17/_player_input_8cs_source.html#l00024">24</a> of file <a class="el" href="../../d5/d17/_player_input_8cs_source.html">PlayerInput.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac1d1a9b6cd3ea0c479e44ba09f90df2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1d1a9b6cd3ea0c479e44ba09f90df2d">&#9670;&nbsp;</a></span>mouseSensitivity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector2 FramedWok.PlayerController.PlayerInput.mouseSensitivity = new Vector2(5.0f, 2.0f)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How much the mouse movement affects the rotation of the camera </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d17/_player_input_8cs_source.html#l00019">19</a> of file <a class="el" href="../../d5/d17/_player_input_8cs_source.html">PlayerInput.cs</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/joshm/Documents/TAFE/Framework/Assets/FramedWok/PlayerController/<a class="el" href="../../d5/d17/_player_input_8cs_source.html">PlayerInput.cs</a></li>
 </ul>
 </div><!-- contents -->

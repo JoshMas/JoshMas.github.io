@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['compareto_1',['CompareTo',['../de/dae/class_framed_wok_1_1_inventory_1_1_item.html#a299aac17634cda13bc01d6149efacac7',1,'FramedWok.Inventory.Item.CompareTo()'],['../dd/d85/class_framed_wok_1_1_inventory_1_1_item_stack.html#afd364906d7124aa27fa727462e265f54',1,'FramedWok.Inventory.ItemStack.CompareTo()']]]
+  ['binarysearch_2',['BinarySearch',['../d4/deb/class_framed_wok_1_1_searching_1_1_binary_search.html',1,'FramedWok::Searching']]],
+  ['buildmaxheap_3c_20t_20_3e_3',['BuildMaxHeap&lt; T &gt;',['../d0/db5/class_framed_wok_1_1_sorting_1_1_heap_sort_algorithm.html#ac7041f5f61909c98236ceee97d58040d',1,'FramedWok::Sorting::HeapSortAlgorithm']]]
 ];

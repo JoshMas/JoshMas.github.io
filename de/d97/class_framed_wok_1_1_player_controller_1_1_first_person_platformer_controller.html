@@ -73,6 +73,9 @@ $(function() {
 <div class="title">FramedWok.PlayerController.FirstPersonPlatformerController Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Attach this script to a player model to give it controls designed for a first person platformer. You are able to adjust the values for walking, jumping, and air dashing. It's recommended to make the main camera a child of the object this script is attached to.  
+ <a href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for FramedWok.PlayerController.FirstPersonPlatformerController:</div>
 <div class="dyncontent">
@@ -88,6 +91,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr
 <tr class="memitem:a89920e9c7951c6873f7e5c783171ad95"><td class="memItemLeft" align="right" valign="top"><a id="a89920e9c7951c6873f7e5c783171ad95"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> ()</td></tr>
 <tr class="separator:a89920e9c7951c6873f7e5c783171ad95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78c5918304ce827f5b85aefef1fe8d94"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#a78c5918304ce827f5b85aefef1fe8d94">Dash</a> ()</td></tr>
+<tr class="memdesc:a78c5918304ce827f5b85aefef1fe8d94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the dash, and after a timer, cancel all momentum  <a href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#a78c5918304ce827f5b85aefef1fe8d94">More...</a><br /></td></tr>
+<tr class="separator:a78c5918304ce827f5b85aefef1fe8d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a469ae13d617c360cc9881d2a5915cce0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#a469ae13d617c360cc9881d2a5915cce0">OnCollisionEnter</a> (Collision _collision)</td></tr>
+<tr class="memdesc:a469ae13d617c360cc9881d2a5915cce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">On collision, check if it's hit the ground - if so, reset the jump counter Also, end any dash if the player is in teh middle of one  <a href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#a469ae13d617c360cc9881d2a5915cce0">More...</a><br /></td></tr>
+<tr class="separator:a469ae13d617c360cc9881d2a5915cce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -97,11 +106,407 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ae6213067a8f9867cda4f76f766d52f90"><td class="memItemLeft" align="right" valign="top"><a id="ae6213067a8f9867cda4f76f766d52f90"></a>
 <a class="el" href="../../da/d33/class_framed_wok_1_1_player_controller_1_1_player_physics.html">PlayerPhysics</a>&#160;</td><td class="memItemRight" valign="bottom"><b>physics</b></td></tr>
 <tr class="separator:ae6213067a8f9867cda4f76f766d52f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c81ae935683ba250fe47f57dc4a498"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#af2c81ae935683ba250fe47f57dc4a498">walkAcceleration</a> = 100.0f</td></tr>
+<tr class="memdesc:af2c81ae935683ba250fe47f57dc4a498"><td class="mdescLeft">&#160;</td><td class="mdescRight">How quickly the player accelerates  <a href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#af2c81ae935683ba250fe47f57dc4a498">More...</a><br /></td></tr>
+<tr class="separator:af2c81ae935683ba250fe47f57dc4a498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51cfb9e505a4e927348520fe18609c7d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#a51cfb9e505a4e927348520fe18609c7d">maxVelocity</a> = 10.0f</td></tr>
+<tr class="memdesc:a51cfb9e505a4e927348520fe18609c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The player's theoretical max velocity  <a href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#a51cfb9e505a4e927348520fe18609c7d">More...</a><br /></td></tr>
+<tr class="separator:a51cfb9e505a4e927348520fe18609c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f47f4ef1b46d6392de528f4d2b9b6dc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#a0f47f4ef1b46d6392de528f4d2b9b6dc">rateOfRestriction</a> = 0.5f</td></tr>
+<tr class="memdesc:a0f47f4ef1b46d6392de528f4d2b9b6dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The rate at which the player's current velocity is brought down  <a href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#a0f47f4ef1b46d6392de528f4d2b9b6dc">More...</a><br /></td></tr>
+<tr class="separator:a0f47f4ef1b46d6392de528f4d2b9b6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a826dcad99f89e409be76e43149cfea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#a6a826dcad99f89e409be76e43149cfea">canJump</a> = true</td></tr>
+<tr class="memdesc:a6a826dcad99f89e409be76e43149cfea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables/disable the jump  <a href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#a6a826dcad99f89e409be76e43149cfea">More...</a><br /></td></tr>
+<tr class="separator:a6a826dcad99f89e409be76e43149cfea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcd45b527a4ac3b06684811a075d051a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#adcd45b527a4ac3b06684811a075d051a">airControl</a> = 1.0f</td></tr>
+<tr class="memdesc:adcd45b527a4ac3b06684811a075d051a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount of control that the player's movement keys have on the player while airborne  <a href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#adcd45b527a4ac3b06684811a075d051a">More...</a><br /></td></tr>
+<tr class="separator:adcd45b527a4ac3b06684811a075d051a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10f81defc91eca5937bc455dbb2025c2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#a10f81defc91eca5937bc455dbb2025c2">jumpStrength</a> = 10.0f</td></tr>
+<tr class="memdesc:a10f81defc91eca5937bc455dbb2025c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">How much force the jump has  <a href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#a10f81defc91eca5937bc455dbb2025c2">More...</a><br /></td></tr>
+<tr class="separator:a10f81defc91eca5937bc455dbb2025c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b54ed0c50d4eff1743ad11eaca19095"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#a2b54ed0c50d4eff1743ad11eaca19095">numberOfJumps</a> = 1</td></tr>
+<tr class="memdesc:a2b54ed0c50d4eff1743ad11eaca19095"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many times the player can jump before landing  <a href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#a2b54ed0c50d4eff1743ad11eaca19095">More...</a><br /></td></tr>
+<tr class="separator:a2b54ed0c50d4eff1743ad11eaca19095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a972d959ba7fac129c2ae9233d1c60121"><td class="memItemLeft" align="right" valign="top"><a id="a972d959ba7fac129c2ae9233d1c60121"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>jumpCounter</b> = 0</td></tr>
+<tr class="separator:a972d959ba7fac129c2ae9233d1c60121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa97b785e696eb1566428dfb3d9f930aa"><td class="memItemLeft" align="right" valign="top"><a id="aa97b785e696eb1566428dfb3d9f930aa"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isGrounded</b> = true</td></tr>
+<tr class="separator:aa97b785e696eb1566428dfb3d9f930aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f4381d5b402b1be4863784a7fc81d33"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#a4f4381d5b402b1be4863784a7fc81d33">canDash</a> = true</td></tr>
+<tr class="memdesc:a4f4381d5b402b1be4863784a7fc81d33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables/disables the dash  <a href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#a4f4381d5b402b1be4863784a7fc81d33">More...</a><br /></td></tr>
+<tr class="separator:a4f4381d5b402b1be4863784a7fc81d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0d3ed9a997e10e94f7894520b4e5dc5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#ac0d3ed9a997e10e94f7894520b4e5dc5">horizontalDashOnly</a> = false</td></tr>
+<tr class="memdesc:ac0d3ed9a997e10e94f7894520b4e5dc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restricts the dash to the XZ plane  <a href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#ac0d3ed9a997e10e94f7894520b4e5dc5">More...</a><br /></td></tr>
+<tr class="separator:ac0d3ed9a997e10e94f7894520b4e5dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76a587f54f5cc1dbc26543dba4254588"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#a76a587f54f5cc1dbc26543dba4254588">dashStrength</a> = 20.0f</td></tr>
+<tr class="memdesc:a76a587f54f5cc1dbc26543dba4254588"><td class="mdescLeft">&#160;</td><td class="mdescRight">How much force the dash has  <a href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#a76a587f54f5cc1dbc26543dba4254588">More...</a><br /></td></tr>
+<tr class="separator:a76a587f54f5cc1dbc26543dba4254588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a555514ec3fc503b8e07a5196be276260"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#a555514ec3fc503b8e07a5196be276260">dashDuration</a> = 0.1f</td></tr>
+<tr class="memdesc:a555514ec3fc503b8e07a5196be276260"><td class="mdescLeft">&#160;</td><td class="mdescRight">How long the dash goes for before ending  <a href="../../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#a555514ec3fc503b8e07a5196be276260">More...</a><br /></td></tr>
+<tr class="separator:a555514ec3fc503b8e07a5196be276260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac6857aa2ea67e9301cf0a7d5ecc38b3"><td class="memItemLeft" align="right" valign="top"><a id="aac6857aa2ea67e9301cf0a7d5ecc38b3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDashing</b> = false</td></tr>
+<tr class="separator:aac6857aa2ea67e9301cf0a7d5ecc38b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html#l00010">10</a> of file <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html">FirstPersonPlatformerController.cs</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>Attach this script to a player model to give it controls designed for a first person platformer. You are able to adjust the values for walking, jumping, and air dashing. It's recommended to make the main camera a child of the object this script is attached to. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html#l00015">15</a> of file <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html">FirstPersonPlatformerController.cs</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a78c5918304ce827f5b85aefef1fe8d94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78c5918304ce827f5b85aefef1fe8d94">&#9670;&nbsp;</a></span>Dash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerator FramedWok.PlayerController.FirstPersonPlatformerController.Dash </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Use the dash, and after a timer, cancel all momentum </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html#l00107">107</a> of file <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html">FirstPersonPlatformerController.cs</a>.</p>
+
+</div>
+</div>
+<a id="a469ae13d617c360cc9881d2a5915cce0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a469ae13d617c360cc9881d2a5915cce0">&#9670;&nbsp;</a></span>OnCollisionEnter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FramedWok.PlayerController.FirstPersonPlatformerController.OnCollisionEnter </td>
+          <td>(</td>
+          <td class="paramtype">Collision&#160;</td>
+          <td class="paramname"><em>_collision</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>On collision, check if it's hit the ground - if so, reset the jump counter Also, end any dash if the player is in teh middle of one </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_collision</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html#l00121">121</a> of file <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html">FirstPersonPlatformerController.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="adcd45b527a4ac3b06684811a075d051a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcd45b527a4ac3b06684811a075d051a">&#9670;&nbsp;</a></span>airControl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FramedWok.PlayerController.FirstPersonPlatformerController.airControl = 1.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The amount of control that the player's movement keys have on the player while airborne </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html#l00040">40</a> of file <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html">FirstPersonPlatformerController.cs</a>.</p>
+
+</div>
+</div>
+<a id="a4f4381d5b402b1be4863784a7fc81d33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f4381d5b402b1be4863784a7fc81d33">&#9670;&nbsp;</a></span>canDash</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FramedWok.PlayerController.FirstPersonPlatformerController.canDash = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enables/disables the dash </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html#l00055">55</a> of file <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html">FirstPersonPlatformerController.cs</a>.</p>
+
+</div>
+</div>
+<a id="a6a826dcad99f89e409be76e43149cfea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a826dcad99f89e409be76e43149cfea">&#9670;&nbsp;</a></span>canJump</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FramedWok.PlayerController.FirstPersonPlatformerController.canJump = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enables/disable the jump </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html#l00036">36</a> of file <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html">FirstPersonPlatformerController.cs</a>.</p>
+
+</div>
+</div>
+<a id="a555514ec3fc503b8e07a5196be276260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a555514ec3fc503b8e07a5196be276260">&#9670;&nbsp;</a></span>dashDuration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FramedWok.PlayerController.FirstPersonPlatformerController.dashDuration = 0.1f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How long the dash goes for before ending </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html#l00067">67</a> of file <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html">FirstPersonPlatformerController.cs</a>.</p>
+
+</div>
+</div>
+<a id="a76a587f54f5cc1dbc26543dba4254588"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76a587f54f5cc1dbc26543dba4254588">&#9670;&nbsp;</a></span>dashStrength</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FramedWok.PlayerController.FirstPersonPlatformerController.dashStrength = 20.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How much force the dash has </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html#l00063">63</a> of file <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html">FirstPersonPlatformerController.cs</a>.</p>
+
+</div>
+</div>
+<a id="ac0d3ed9a997e10e94f7894520b4e5dc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0d3ed9a997e10e94f7894520b4e5dc5">&#9670;&nbsp;</a></span>horizontalDashOnly</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FramedWok.PlayerController.FirstPersonPlatformerController.horizontalDashOnly = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Restricts the dash to the XZ plane </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html#l00059">59</a> of file <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html">FirstPersonPlatformerController.cs</a>.</p>
+
+</div>
+</div>
+<a id="a10f81defc91eca5937bc455dbb2025c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10f81defc91eca5937bc455dbb2025c2">&#9670;&nbsp;</a></span>jumpStrength</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FramedWok.PlayerController.FirstPersonPlatformerController.jumpStrength = 10.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How much force the jump has </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html#l00044">44</a> of file <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html">FirstPersonPlatformerController.cs</a>.</p>
+
+</div>
+</div>
+<a id="a51cfb9e505a4e927348520fe18609c7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51cfb9e505a4e927348520fe18609c7d">&#9670;&nbsp;</a></span>maxVelocity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FramedWok.PlayerController.FirstPersonPlatformerController.maxVelocity = 10.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The player's theoretical max velocity </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html#l00027">27</a> of file <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html">FirstPersonPlatformerController.cs</a>.</p>
+
+</div>
+</div>
+<a id="a2b54ed0c50d4eff1743ad11eaca19095"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b54ed0c50d4eff1743ad11eaca19095">&#9670;&nbsp;</a></span>numberOfJumps</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FramedWok.PlayerController.FirstPersonPlatformerController.numberOfJumps = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How many times the player can jump before landing </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html#l00048">48</a> of file <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html">FirstPersonPlatformerController.cs</a>.</p>
+
+</div>
+</div>
+<a id="a0f47f4ef1b46d6392de528f4d2b9b6dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f47f4ef1b46d6392de528f4d2b9b6dc">&#9670;&nbsp;</a></span>rateOfRestriction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FramedWok.PlayerController.FirstPersonPlatformerController.rateOfRestriction = 0.5f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The rate at which the player's current velocity is brought down </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html#l00031">31</a> of file <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html">FirstPersonPlatformerController.cs</a>.</p>
+
+</div>
+</div>
+<a id="af2c81ae935683ba250fe47f57dc4a498"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2c81ae935683ba250fe47f57dc4a498">&#9670;&nbsp;</a></span>walkAcceleration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FramedWok.PlayerController.FirstPersonPlatformerController.walkAcceleration = 100.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How quickly the player accelerates </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html#l00023">23</a> of file <a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html">FirstPersonPlatformerController.cs</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/joshm/Documents/TAFE/Framework/Assets/FramedWok/PlayerController/<a class="el" href="../../d5/d3c/_first_person_platformer_controller_8cs_source.html">FirstPersonPlatformerController.cs</a></li>
 </ul>
 </div><!-- contents -->

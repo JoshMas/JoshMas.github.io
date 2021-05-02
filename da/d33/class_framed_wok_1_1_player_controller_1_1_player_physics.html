@@ -74,6 +74,9 @@ $(function() {
 <div class="title">FramedWok.PlayerController.PlayerPhysics Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class that handles physics simulation for the first person platforming controller Does not use the mass of the attached RigidBody  
+ <a href="../../da/d33/class_framed_wok_1_1_player_controller_1_1_player_physics.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for FramedWok.PlayerController.PlayerPhysics:</div>
 <div class="dyncontent">
@@ -83,12 +86,27 @@ Inheritance diagram for FramedWok.PlayerController.PlayerPhysics:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a753f7d677908367e69c28960cbb5b3fa"><td class="memItemLeft" align="right" valign="top"><a id="a753f7d677908367e69c28960cbb5b3fa"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVelocity</b> (Vector3 velocity)</td></tr>
-<tr class="separator:a753f7d677908367e69c28960cbb5b3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a582e97829debac0448a916e98ed98137"><td class="memItemLeft" align="right" valign="top"><a id="a582e97829debac0448a916e98ed98137"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Rotate</b> (Vector3 rotation)</td></tr>
-<tr class="separator:a582e97829debac0448a916e98ed98137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d4a31744ab4e87acdbe877a6283791"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d33/class_framed_wok_1_1_player_controller_1_1_player_physics.html#af1d4a31744ab4e87acdbe877a6283791">AddGroundAcceleration</a> (Vector3 _acceleration)</td></tr>
+<tr class="memdesc:af1d4a31744ab4e87acdbe877a6283791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a force as a velocity change, for moving on the XZ plane  <a href="../../da/d33/class_framed_wok_1_1_player_controller_1_1_player_physics.html#af1d4a31744ab4e87acdbe877a6283791">More...</a><br /></td></tr>
+<tr class="separator:af1d4a31744ab4e87acdbe877a6283791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4faf0d44bcaf2667b9f636930dc7653"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d33/class_framed_wok_1_1_player_controller_1_1_player_physics.html#ae4faf0d44bcaf2667b9f636930dc7653">RestrictVelocity</a> (float _maximum, float _rate)</td></tr>
+<tr class="memdesc:ae4faf0d44bcaf2667b9f636930dc7653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lerps the rigidbody's velocity between itself and a restricted version of itself  <a href="../../da/d33/class_framed_wok_1_1_player_controller_1_1_player_physics.html#ae4faf0d44bcaf2667b9f636930dc7653">More...</a><br /></td></tr>
+<tr class="separator:ae4faf0d44bcaf2667b9f636930dc7653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36b58d9604414d34f8f6a1fe825aed70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d33/class_framed_wok_1_1_player_controller_1_1_player_physics.html#a36b58d9604414d34f8f6a1fe825aed70">Rotate</a> (Vector3 _rotation)</td></tr>
+<tr class="memdesc:a36b58d9604414d34f8f6a1fe825aed70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the player's transform and the camera to point in the new direction  <a href="../../da/d33/class_framed_wok_1_1_player_controller_1_1_player_physics.html#a36b58d9604414d34f8f6a1fe825aed70">More...</a><br /></td></tr>
+<tr class="separator:a36b58d9604414d34f8f6a1fe825aed70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a125a877df0850fc9c9172c21723f3fa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d33/class_framed_wok_1_1_player_controller_1_1_player_physics.html#a125a877df0850fc9c9172c21723f3fa4">Jump</a> (float _jumpStrength)</td></tr>
+<tr class="memdesc:a125a877df0850fc9c9172c21723f3fa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the upwards velocity to 0 before adding an upwards force  <a href="../../da/d33/class_framed_wok_1_1_player_controller_1_1_player_physics.html#a125a877df0850fc9c9172c21723f3fa4">More...</a><br /></td></tr>
+<tr class="separator:a125a877df0850fc9c9172c21723f3fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e1ed6bd41a62dd2a5f0b926318ce1b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d33/class_framed_wok_1_1_player_controller_1_1_player_physics.html#a0e1ed6bd41a62dd2a5f0b926318ce1b0">Dash</a> (Vector3 _direction, float _dashStrength)</td></tr>
+<tr class="memdesc:a0e1ed6bd41a62dd2a5f0b926318ce1b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply an amount of force in s certain direction as a dash  <a href="../../da/d33/class_framed_wok_1_1_player_controller_1_1_player_physics.html#a0e1ed6bd41a62dd2a5f0b926318ce1b0">More...</a><br /></td></tr>
+<tr class="separator:a0e1ed6bd41a62dd2a5f0b926318ce1b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a900ecc32ad73acf5e88c30fe12c791bc"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d33/class_framed_wok_1_1_player_controller_1_1_player_physics.html#a900ecc32ad73acf5e88c30fe12c791bc">GetDashDirection</a> (bool _restrictYAxis)</td></tr>
+<tr class="memdesc:a900ecc32ad73acf5e88c30fe12c791bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the direction the camera is looking as a normalised vector3  <a href="../../da/d33/class_framed_wok_1_1_player_controller_1_1_player_physics.html#a900ecc32ad73acf5e88c30fe12c791bc">More...</a><br /></td></tr>
+<tr class="separator:a900ecc32ad73acf5e88c30fe12c791bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc00eb97a5933bc79e455676aac9822a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d33/class_framed_wok_1_1_player_controller_1_1_player_physics.html#adc00eb97a5933bc79e455676aac9822a">IsGrounded</a> ()</td></tr>
+<tr class="memdesc:adc00eb97a5933bc79e455676aac9822a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the Raycast pointing downwards hits anything just below the collider  <a href="../../da/d33/class_framed_wok_1_1_player_controller_1_1_player_physics.html#adc00eb97a5933bc79e455676aac9822a">More...</a><br /></td></tr>
+<tr class="separator:adc00eb97a5933bc79e455676aac9822a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -104,14 +122,304 @@ Rigidbody&#160;</td><td class="memItemRight" valign="bottom"><b>playerRigidbody<
 <tr class="memitem:accf5ae34b3d894f343226f1af34c05d5"><td class="memItemLeft" align="right" valign="top"><a id="accf5ae34b3d894f343226f1af34c05d5"></a>
 Collider&#160;</td><td class="memItemRight" valign="bottom"><b>playerCollider</b></td></tr>
 <tr class="separator:accf5ae34b3d894f343226f1af34c05d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7087c3e32991cc63f8b0df1b983ebc6e"><td class="memItemLeft" align="right" valign="top"><a id="a7087c3e32991cc63f8b0df1b983ebc6e"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>appliedLinearVelocity</b> = Vector3.zero</td></tr>
-<tr class="separator:a7087c3e32991cc63f8b0df1b983ebc6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00a4c638be199924ebb67f7a43ebd1c3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d33/class_framed_wok_1_1_player_controller_1_1_player_physics.html#a00a4c638be199924ebb67f7a43ebd1c3">groundCheckLength</a> = 1.05f</td></tr>
+<tr class="memdesc:a00a4c638be199924ebb67f7a43ebd1c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length of the Raycast used to check if the playerCollider is on top of another collider  <a href="../../da/d33/class_framed_wok_1_1_player_controller_1_1_player_physics.html#a00a4c638be199924ebb67f7a43ebd1c3">More...</a><br /></td></tr>
+<tr class="separator:a00a4c638be199924ebb67f7a43ebd1c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d1/d79/_player_physics_8cs_source.html#l00008">8</a> of file <a class="el" href="../../d1/d79/_player_physics_8cs_source.html">PlayerPhysics.cs</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>Class that handles physics simulation for the first person platforming controller Does not use the mass of the attached RigidBody </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d79/_player_physics_8cs_source.html#l00012">12</a> of file <a class="el" href="../../d1/d79/_player_physics_8cs_source.html">PlayerPhysics.cs</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="af1d4a31744ab4e87acdbe877a6283791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1d4a31744ab4e87acdbe877a6283791">&#9670;&nbsp;</a></span>AddGroundAcceleration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FramedWok.PlayerController.PlayerPhysics.AddGroundAcceleration </td>
+          <td>(</td>
+          <td class="paramtype">Vector3&#160;</td>
+          <td class="paramname"><em>_acceleration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds a force as a velocity change, for moving on the XZ plane </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_acceleration</td><td>The player's movement vector</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d79/_player_physics_8cs_source.html#l00035">35</a> of file <a class="el" href="../../d1/d79/_player_physics_8cs_source.html">PlayerPhysics.cs</a>.</p>
+
+</div>
+</div>
+<a id="a0e1ed6bd41a62dd2a5f0b926318ce1b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e1ed6bd41a62dd2a5f0b926318ce1b0">&#9670;&nbsp;</a></span>Dash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FramedWok.PlayerController.PlayerPhysics.Dash </td>
+          <td>(</td>
+          <td class="paramtype">Vector3&#160;</td>
+          <td class="paramname"><em>_direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>_dashStrength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Apply an amount of force in s certain direction as a dash </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_direction</td><td>Which way the dash goes</td></tr>
+    <tr><td class="paramname">_dashStrength</td><td>Strength of the dash</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d79/_player_physics_8cs_source.html#l00075">75</a> of file <a class="el" href="../../d1/d79/_player_physics_8cs_source.html">PlayerPhysics.cs</a>.</p>
+
+</div>
+</div>
+<a id="a900ecc32ad73acf5e88c30fe12c791bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a900ecc32ad73acf5e88c30fe12c791bc">&#9670;&nbsp;</a></span>GetDashDirection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 FramedWok.PlayerController.PlayerPhysics.GetDashDirection </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>_restrictYAxis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the direction the camera is looking as a normalised vector3 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_restrictYAxis</td><td>If true, the dash can only travel on the XZ plane</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d79/_player_physics_8cs_source.html#l00085">85</a> of file <a class="el" href="../../d1/d79/_player_physics_8cs_source.html">PlayerPhysics.cs</a>.</p>
+
+</div>
+</div>
+<a id="adc00eb97a5933bc79e455676aac9822a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc00eb97a5933bc79e455676aac9822a">&#9670;&nbsp;</a></span>IsGrounded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FramedWok.PlayerController.PlayerPhysics.IsGrounded </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the Raycast pointing downwards hits anything just below the collider </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d79/_player_physics_8cs_source.html#l00098">98</a> of file <a class="el" href="../../d1/d79/_player_physics_8cs_source.html">PlayerPhysics.cs</a>.</p>
+
+</div>
+</div>
+<a id="a125a877df0850fc9c9172c21723f3fa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a125a877df0850fc9c9172c21723f3fa4">&#9670;&nbsp;</a></span>Jump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FramedWok.PlayerController.PlayerPhysics.Jump </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>_jumpStrength</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the upwards velocity to 0 before adding an upwards force </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_jumpStrength</td><td>The amount of upwards force applied</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d79/_player_physics_8cs_source.html#l00064">64</a> of file <a class="el" href="../../d1/d79/_player_physics_8cs_source.html">PlayerPhysics.cs</a>.</p>
+
+</div>
+</div>
+<a id="ae4faf0d44bcaf2667b9f636930dc7653"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4faf0d44bcaf2667b9f636930dc7653">&#9670;&nbsp;</a></span>RestrictVelocity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FramedWok.PlayerController.PlayerPhysics.RestrictVelocity </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>_maximum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>_rate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lerps the rigidbody's velocity between itself and a restricted version of itself </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_maximum</td><td>The restricted magnitude for the velocity</td></tr>
+    <tr><td class="paramname">_rate</td><td>The lerp value</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d79/_player_physics_8cs_source.html#l00045">45</a> of file <a class="el" href="../../d1/d79/_player_physics_8cs_source.html">PlayerPhysics.cs</a>.</p>
+
+</div>
+</div>
+<a id="a36b58d9604414d34f8f6a1fe825aed70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36b58d9604414d34f8f6a1fe825aed70">&#9670;&nbsp;</a></span>Rotate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FramedWok.PlayerController.PlayerPhysics.Rotate </td>
+          <td>(</td>
+          <td class="paramtype">Vector3&#160;</td>
+          <td class="paramname"><em>_rotation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rotates the player's transform and the camera to point in the new direction </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d79/_player_physics_8cs_source.html#l00054">54</a> of file <a class="el" href="../../d1/d79/_player_physics_8cs_source.html">PlayerPhysics.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a00a4c638be199924ebb67f7a43ebd1c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00a4c638be199924ebb67f7a43ebd1c3">&#9670;&nbsp;</a></span>groundCheckLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FramedWok.PlayerController.PlayerPhysics.groundCheckLength = 1.05f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The length of the Raycast used to check if the playerCollider is on top of another collider </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d79/_player_physics_8cs_source.html#l00020">20</a> of file <a class="el" href="../../d1/d79/_player_physics_8cs_source.html">PlayerPhysics.cs</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/joshm/Documents/TAFE/Framework/Assets/FramedWok/PlayerController/<a class="el" href="../../d1/d79/_player_physics_8cs_source.html">PlayerPhysics.cs</a></li>
 </ul>
 </div><!-- contents -->

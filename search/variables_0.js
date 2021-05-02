@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['height_52',['height',['../db/dea/class_framed_wok_1_1_inventory_1_1_inventory.html#abfce32c4b3a145237e34a9edcf6c7f21',1,'FramedWok::Inventory::Inventory']]]
+  ['aircontrol_93',['airControl',['../de/d97/class_framed_wok_1_1_player_controller_1_1_first_person_platformer_controller.html#adcd45b527a4ac3b06684811a075d051a',1,'FramedWok::PlayerController::FirstPersonPlatformerController']]]
 ];

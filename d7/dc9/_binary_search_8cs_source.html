@@ -78,32 +78,35 @@ $(function() {
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="../../d4/deb/class_framed_wok_1_1_searching_1_1_binary_search.html">    8</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code" href="../../d4/deb/class_framed_wok_1_1_searching_1_1_binary_search.html">BinarySearch</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d4/deb/class_framed_wok_1_1_searching_1_1_binary_search.html#abca55c33d753260e84749328adcfa7ee">   18</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> T <a class="code" href="../../d4/deb/class_framed_wok_1_1_searching_1_1_binary_search.html#abca55c33d753260e84749328adcfa7ee">Search&lt;T&gt;</a>(List&lt;T&gt; list, T itemToLookFor) where T : IComparable&lt;T&gt;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keywordflow">if</span> (list.Count == 0)</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                <span class="keywordflow">return</span> <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordflow">if</span>(list.Count == 1)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                <span class="keywordflow">return</span> list[0].CompareTo(itemToLookFor) == 0 ? list[0] : <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordtype">int</span> itemIndex = list.Count / 2;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            T itemToCheck = list[itemIndex];</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keywordflow">switch</span> (itemToCheck.CompareTo(itemToLookFor))</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <span class="keywordflow">case</span> 0:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                    <span class="keywordflow">return</span> itemToCheck;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d4/deb/class_framed_wok_1_1_searching_1_1_binary_search.html#abca55c33d753260e84749328adcfa7ee">   17</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> T <a class="code" href="../../d4/deb/class_framed_wok_1_1_searching_1_1_binary_search.html#abca55c33d753260e84749328adcfa7ee">Search&lt;T&gt;</a>(List&lt;T&gt; list, T itemToLookFor) where T : IComparable&lt;T&gt;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordflow">if</span> (list.Count == 0)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                <span class="keywordflow">return</span> <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keywordflow">if</span>(list.Count == 1)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                <span class="keywordflow">return</span> list[0].CompareTo(itemToLookFor) == 0 ? list[0] : <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keywordtype">int</span> itemIndex = list.Count / 2;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            T itemToCheck = list[itemIndex];</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordflow">switch</span> (itemToCheck.CompareTo(itemToLookFor))</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                    <span class="keywordflow">return</span> itemToCheck;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                    <span class="comment">//The item we&#39;re looking for is smaller</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                    <span class="keywordflow">return</span> Search(list.GetRange(0, itemIndex), itemToLookFor);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <span class="keywordflow">case</span> -1:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                    itemIndex++;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                    <span class="keywordflow">return</span> Search(list.GetRange(itemIndex, list.Count - itemIndex), itemToLookFor);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                    <span class="keywordflow">return</span> <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                    <span class="comment">//The item we&#39;re looking for is larger</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                    itemIndex++;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                    <span class="keywordflow">return</span> Search(list.GetRange(itemIndex, list.Count - itemIndex), itemToLookFor);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    <span class="comment">//Something weird happened</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                    <span class="keywordflow">return</span> <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 <div class="ttc" id="aclass_framed_wok_1_1_searching_1_1_binary_search_html"><div class="ttname"><a href="../../d4/deb/class_framed_wok_1_1_searching_1_1_binary_search.html">FramedWok.Searching.BinarySearch</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dc9/_binary_search_8cs_source.html#l00008">BinarySearch.cs:9</a></div></div>
-<div class="ttc" id="aclass_framed_wok_1_1_searching_1_1_binary_search_html_abca55c33d753260e84749328adcfa7ee"><div class="ttname"><a href="../../d4/deb/class_framed_wok_1_1_searching_1_1_binary_search.html#abca55c33d753260e84749328adcfa7ee">FramedWok.Searching.BinarySearch.Search&lt; T &gt;</a></div><div class="ttdeci">static T Search&lt; T &gt;(List&lt; T &gt; list, T itemToLookFor)</div><div class="ttdoc">Perform a binary search to look for an item in a list. This algorithm only works on sorted lists</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dc9/_binary_search_8cs_source.html#l00018">BinarySearch.cs:18</a></div></div>
+<div class="ttc" id="aclass_framed_wok_1_1_searching_1_1_binary_search_html_abca55c33d753260e84749328adcfa7ee"><div class="ttname"><a href="../../d4/deb/class_framed_wok_1_1_searching_1_1_binary_search.html#abca55c33d753260e84749328adcfa7ee">FramedWok.Searching.BinarySearch.Search&lt; T &gt;</a></div><div class="ttdeci">static T Search&lt; T &gt;(List&lt; T &gt; list, T itemToLookFor)</div><div class="ttdoc">Perform a binary search to look for an item in a list. This algorithm only works on sorted lists</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dc9/_binary_search_8cs_source.html#l00017">BinarySearch.cs:17</a></div></div>
 <div class="ttc" id="anamespace_framed_wok_1_1_searching_html"><div class="ttname"><a href="../../d1/dc7/namespace_framed_wok_1_1_searching.html">FramedWok.Searching</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dc9/_binary_search_8cs_source.html#l00006">BinarySearch.cs:7</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
